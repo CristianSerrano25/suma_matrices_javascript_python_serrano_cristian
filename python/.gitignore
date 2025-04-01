@@ -1,0 +1,19 @@
+# Archivos y carpetas del entorno virtual
+venv/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Configuración de entorno
+.env
+*.log
+instance/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Dependencias instaladas localmente
+*.sqlite3
+*.db

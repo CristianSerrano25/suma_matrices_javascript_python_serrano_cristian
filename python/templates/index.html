@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de Matrices</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Suma de Matrices</h1>
+
+        <div class="input-group">
+            <label for="filas">Filas:</label>
+            <input type="number" id="filas" min="1">
+            <label for="columnas">Columnas:</label>
+            <input type="number" id="columnas" min="1">
+            <button onclick="crearInputs()">Generar Matrices</button>
+        </div>
+
+        <div id="matrices-container" class="matrices-container"></div>
+        
+        <button id="sumar" class="btn" style="display:none;" onclick="sumarMatrices()">Sumar Matrices</button>
+
+        <h2>Resultado:</h2>
+        <div id="resultado" class="resultado-container"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
